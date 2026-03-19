@@ -17,11 +17,6 @@
     "process-management",
     "mcp-tool-routing"
   ],
-  "files": [
-    "dist/cli.js",
-    "LICENSE.md",
-    "README.md"
-  ],
   "type": "module",
   "main": "./dist/cli.js",
   "bin": {
@@ -39,6 +34,7 @@
     "release:patch": "bash scripts/release.sh patch",
     "release:minor": "bash scripts/release.sh minor",
     "release:major": "bash scripts/release.sh major",
+    "prepare": "npm run build",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
